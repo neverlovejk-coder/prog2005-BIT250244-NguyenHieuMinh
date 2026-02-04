@@ -1,0 +1,16 @@
+def giai_thua(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * giai_thua(n - 1)
+
+n = int(input("Nhap n: "))
+print("Giai thua:", giai_thua(n))
+#7
+a = int(input("Nhap a: "))
+b = int(input("Nhap b: "))
+while a != b:
+    if a > b:
+        a = a - b
+    else:
+        b = b - a
+print("USCLN là:", a)
