@@ -1,0 +1,10 @@
+#5
+class User:
+    def __init__(self, id):
+        self._id = id
+    @property
+    def id(self):
+        return self._id
+u = User(101)
+print("User id:", u.id)
+u.id = 200   # sẽ lỗi
