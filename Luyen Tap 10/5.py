@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(0, 10, 100)
+y1 = x ** 2
+y2 = np.sqrt(x)
+fig, ax = plt.subplots(1, 2, figsize=(12, 5))
+ax[0].plot(x, y1, color='blue', label='$y = x^2$')
+ax[0].set_title('Đồ thị $y = x^2$')
+ax[0].set_xlabel('Trục x')
+ax[0].set_ylabel('Trục y')
+ax[0].grid(True)
+ax[0].legend()
+ax[1].plot(x, y2, color='red', label='$y = \sqrt{x}$')
+ax[1].set_title('Đồ thị $y = \sqrt{x}$')
+ax[1].set_xlabel('Trục x')
+ax[1].set_ylabel('Trục y')
+ax[1].grid(True)
+ax[1].legend()
+plt.tight_layout()
+plt.show()
