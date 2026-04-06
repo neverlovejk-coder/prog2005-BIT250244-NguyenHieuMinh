@@ -1,0 +1,4 @@
+class Book:
+    def __init__(self,name,author,price):
+        self.name=name
+        self.author=price
